@@ -1,4 +1,7 @@
-@import 'button';
+@import '_variables';
+@import '_globals';
+@import '_header';
+
 
 /* ubuntu-regular - latin */
 /* ubuntu-300 - latin */
@@ -7,63 +10,59 @@
     font-style: normal;
     font-weight: 300;
     src: local(''),
-         url('../fonts/ubuntu-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ubuntu-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* ubuntu-regular - latin */
-  @font-face {
+        url('../fonts/ubuntu-v15-latin-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/ubuntu-v15-latin-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ubuntu-regular - latin */
+@font-face {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/ubuntu-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ubuntu-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* ubuntu-500 - latin */
-  @font-face {
+        url('../fonts/ubuntu-v15-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/ubuntu-v15-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ubuntu-500 - latin */
+@font-face {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
     src: local(''),
-         url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ubuntu-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* ubuntu-700 - latin */
-  @font-face {
+        url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/ubuntu-v15-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ubuntu-700 - latin */
+@font-face {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     src: local(''),
-         url('../fonts/ubuntu-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/ubuntu-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-html{
-    box-sizing:border-box;
+        url('../fonts/ubuntu-v15-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/ubuntu-v15-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-*, *::before, *::after{
-    box-sizing: inherit;
-}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
 
-body {
-    width:1920px;
-    background: url(../img/backgroundBlobs.svg);
-    height:1080px;
-}
 
-header{
-    width: 1800px;
-    height: 988px;
-    margin-top: 60px;
-    margin-left: 60px;
 
-    
-}
 
-.navigation{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-}
+
+
+
+
+
+
