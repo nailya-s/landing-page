@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="././styles/css/style.css">
 </head>
 <body>
-    <header class="header">
+    
+        <header class="header">
             <div class="header__container">
                 <nav class="flex flex-jc-sb flex-ai-c">
                     <a href='/' class='header__logo'>
@@ -18,15 +19,15 @@
                     <div class="header_nav">
                         <ul class="header__list">
                             <li><a href="#service-block">Услуги</a></li>
-                            <div class="cirlce"></div>
+                            <div class="circle"></div>
                             <li><a href="#cases">Кейсы</a></li>
-                            <div class="cirlce"></div>
+                            <div class="circle"></div>
                             <li><a href="#outcome">Что вы получите</a></li>
-                            <div class="cirlce"></div>
+                            <div class="circle"></div>
                             <li><a href="#contacts">Контакты</a></li>
-                            <span>|</span>
+                            <div class="verticalLine"></div>
                             <li><a href="#connect">Наши Технологии</a></li>
-                            <div class="cirlce"></div>
+                            <div class="circle"></div>
                             <li><a href="#connect">История компании</a></li>
                         </ul>
                     </div>
@@ -44,19 +45,27 @@
                             <img src="./img/icons/whatsapp 1.svg"
                             alt="whatsapp" />
                         </div>
-                        <div class="header__menu">
+                        <div class="header__dropdown">
                             <div class="flex flex-ai-c">
                                 <img src="./img/icons/language.svg"
                                 alt="language" />
                                 <div class = "selected">
                                     Рус
                                 </div>
+                                <div class="arrow">
+                                </div>
                                 <ul>
                                     <li>
-                                        <a>ENG</a>
+                                        <a class="item" href="#"> <img src="./img/icons/russia 1.svg"
+                                            alt="russian" /> Рус </a>
                                     </li>
                                     <li>
-                                        <a>Рус</a>
+                                        <a class="item" href="#"> <img src="./img/icons/us.svg"
+                                            alt="english" /> Eng </a>
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"> <img src="./img/icons/kaz.svg"
+                                            alt="kazakh" /> Qaz </a>
                                     </li>
                                 </ul>
                             </div>
@@ -65,11 +74,40 @@
                 </nav>
             </div>
     </header>
+   
+        <section class="section__container">
+            <div class="main">
+                <div class="main__text">
+                    <img src="./img/main/numbers.svg"
+                    alt="logo" />
+                    <h1>
+                        Трансформируем <br /> бизнес задачи в IT
+                    </h1>
+                    <p>
+                        Наша главная цель - помочь компаниям и <br /> организациям расти и работать более эффективно - <br /> улучшая бизнес, карьеру и жизнь.
+                    </p>
+                    <button>
+                        Хочу работать с вами
+                    </button>
+                    <button class="special">
+                        История компании
+                    </button>
+                    
+                </div>
+                <div >
+                </div>
+                <div class="">
+                    <img src="./img/main/main-picture.svg"
+                    alt="main-picture" />
+                </div>
+            </div>  
+      
+                <a href="#"><img src="./img/scroll.svg" alt=""></a>
+            
+        </section>
+  
+    
 
-    <section class="section__content">
-        
-    </section>
-
-    <script src="./script/script.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
