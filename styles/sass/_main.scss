@@ -2,16 +2,9 @@
 
     &__container {
         position: absolute;
-        background-blend-mode: inherit;
         width: 1800px;
         height: 960px;
-        margin-left: 60px;
-        margin-top: 227px;
-        background: rgba(255, 255, 255, 0.7);
-        box-shadow: 0px 0px 24px rgba(126, 120, 120, 0.1);
-        backdrop-filter: blur(150px);
-        /* Note: backdrop-filter has minimal browser support */
-        border-radius: 48px;
+        margin-top: 167px;
     }
 
 
@@ -51,6 +44,7 @@
             position: absolute;
             width: 626px;
             height: 626px;
+            
             opacity: 0.25;
             box-shadow: inset -3px 3px 4px rgba(255, 255, 255, 0.2);
             filter: drop-shadow(8px -8px 10px rgba(255, 255, 255, 0.07)) drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25)) drop-shadow(-30px 30px 30px rgba(0, 0, 0, 0.2)) drop-shadow(-45px 45px 70px rgba(0, 0, 0, 0.2))
@@ -65,11 +59,10 @@
             }
         
     }
-    a {
-        img {
-            margin-top: 936px;
-            margin-left: 978px;
-        }
+
+    &__picture {
+
+        margin-right: 56px;
     }
 }
 

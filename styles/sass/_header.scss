@@ -1,8 +1,6 @@
 .header {
     width: 1800px;
     height: 104px;
-    margin-top: 32px;
-    margin-left: 60px;
     display: block;
     position: fixed;
     z-index: 3;
@@ -25,15 +23,7 @@
     &__logo {}
 
 
-    &__container {
-        position: absolute;
-        width: 1800px;
-        background: rgba(255, 255, 255, 0.7);
-        box-shadow: 0px 0px 24px rgba(126, 120, 120, 0.1);
-        backdrop-filter: blur(150px);
-        /* Note: backdrop-filter has minimal browser support */
-        border-radius: 24px;
-    }
+    &__container {}
 
     &__list {
         display: flex;
@@ -95,6 +85,10 @@
                 fill: white;
             }
 
+            &:hover img {
+                filter: brightness(0) invert(1);
+            }
+
             &:active {
                 background: $mainColor;
                 box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.15), inset 0px 0px 8px rgba(0, 0, 0, 0.15);
@@ -114,17 +108,44 @@
         position: relative;
         transition: .3s;
 
+        .languages {
+            display: none;
+        }
+
         img {
             margin: 10px;
         }
 
-        .arrow {
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            transform: rotate(-180deg);
-        }
+        .button-down {
+            position: relative;
+            padding: 5px;
+            margin-left: 24px;
+            background: $lightGreyTwo;
+            height: 24px;
+            width: 24px;
+            border-radius: 12px;
+            transition: all 0.2s linear;
 
+            &::after {
+                content: "";
+                position: static;
+                left: 50%;
+                top: 50%;
+                margin-left: 1px;
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-top: 3px solid $lightGreyOne;
+                border-left: 3px solid $lightGreyOne;
+                top: 10px;
+                transform: rotate(225deg);
+            }
+            &:hover {
+                background: $mainColor;
+                fill: white;
+
+            }
+        }
         &__selected:after {
             content: '';
             display: block;
@@ -132,4 +153,3 @@
         }
     }
 }
-
