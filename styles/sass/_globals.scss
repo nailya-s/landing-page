@@ -15,7 +15,6 @@ body {
     padding: 0;
     width: 1920px;
     height: 1080px;
-    font-family: 'Ubuntu';
     background: #EDF1F4;
     background-image: url(../../img/backgroundBlobs.svg);
     background-position: center;
@@ -61,7 +60,7 @@ h2 {
 
 
 p {
-    font-family: 'Ubuntu';
+    
     line-height: 36px;
     font-weight: 300;
     font-size: 18px;
@@ -86,6 +85,14 @@ input {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
+
+li {
+    list-style-type: none;
+   }
 //SELECT
 
 .select {

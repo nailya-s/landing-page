@@ -24,6 +24,7 @@ body {
 }
 
 .container {
+  font-family: 'Ubuntu';
   position: absolute;
   margin-top: 60px;
   margin-left: 60px;
@@ -92,6 +93,14 @@ input:focus {
   background: #FFFFFF;
   /* mainColor */
   border: 1px solid #19B7BB;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 .select {
@@ -286,6 +295,21 @@ button:active,
 }
 
 .header__dropdown .languages {
+  display: block;
+}
+
+.header__dropdown .languages__picker {
+  position: absolute;
+  width: 122px;
+  height: 104px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.15);
+          box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.15);
+  border-radius: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
   display: none;
 }
 
@@ -319,11 +343,6 @@ button:active,
   top: 10px;
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
-}
-
-.header__dropdown .button-down::after:hover {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
 }
 
 .header__dropdown .button-down:hover {
