@@ -16,8 +16,8 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  width: 1920px;
-  height: 1080px;
+  max-width: 1920px;
+  max-height: 1080px;
   background: #EDF1F4;
   background-image: url(../../img/backgroundBlobs.svg);
   background-position: center;
@@ -368,10 +368,18 @@ button:active,
   width: 626px;
   height: 626px;
   opacity: 0.25;
+  stroke-width: 2px;
   -webkit-box-shadow: inset -3px 3px 4px rgba(255, 255, 255, 0.2);
           box-shadow: inset -3px 3px 4px rgba(255, 255, 255, 0.2);
-  -webkit-filter: drop-shadow(8px -8px 10px rgba(255, 255, 255, 0.07)) drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25)) drop-shadow(-30px 30px 30px rgba(0, 0, 0, 0.2)) drop-shadow(-45px 45px 70px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(8px -8px 10px rgba(255, 255, 255, 0.07)) drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25)) drop-shadow(-30px 30px 30px rgba(0, 0, 0, 0.2)) drop-shadow(-45px 45px 70px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(8px -8px 10px rgba(255, 255, 255, 0.07)) drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25)) drop-shadow(-30px 30px 30px rgba(0, 0, 0, 0.2)) drop-shadow(-45px 45px 70px rgba(83, 12, 12, 0.2));
+          filter: drop-shadow(8px -8px 10px rgba(255, 255, 255, 0.07)) drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25)) drop-shadow(-30px 30px 30px rgba(0, 0, 0, 0.2)) drop-shadow(-45px 45px 70px rgba(83, 12, 12, 0.2));
+}
+
+.main__container .logo:hover {
+  stroke: #4733ff;
+  z-index: 2;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .main__headline {
