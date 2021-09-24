@@ -419,7 +419,7 @@ button:active,
   margin-left: 24px;
 }
 
-.main__headline__picture {
+.main__headline .picture {
   margin-top: 20px;
   margin-right: 56px;
 }
