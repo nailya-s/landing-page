@@ -17,9 +17,9 @@ body {
     max-width: 1920px;
     max-height: 1080px;
     background: #EDF1F4;
-    background-image: url(../../img/backgroundBlobs.svg);
-    background-position: center;
-    overflow-x: hidden;
+    background-image: url(../../img/backgroundBlobs.png);
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 .container {
@@ -151,3 +151,23 @@ button,
     margin-top: 976px;
     margin-left: 936px;
 }
+
+
+//Visibility
+.hide-for-mobile {
+    @include breakpoint-down(small) {
+        display: none;
+      }
+  }
+  .hide-for-tablets {
+    
+  }
+  
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+
+
+

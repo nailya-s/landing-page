@@ -5,11 +5,12 @@
     position: fixed;
     z-index: 3;
 
+
     nav {
         position: relative;
-        padding-top: 8px;
-        padding-left: 56px;
-        padding-right: 56px;
+        margin-top: 15px;
+        margin-left: 56px;
+        margin-right: 32px;
 
         a {
             text-decoration: none;
@@ -21,7 +22,27 @@
     }
 
 
-    &__container {}
+    &__menu {
+        background-color: $mainColor;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        transition: all 0.3s ease-in-out;
+        margin-left: 16px;
+
+        >span {
+            display: block;
+            width: 12px;
+            height: 2px;
+            margin-bottom: 3px;
+            position: relative;
+            background: white;
+            border-radius: 100%;
+            left: 30%;
+            top: 30%;
+        }
+
+    }
 
     &__list {
         display: flex;
@@ -30,11 +51,12 @@
         align-items: center;
         justify-content: space-between;
         list-style-type: none;
+        padding-right: 205px;
 
         .circle {
             position: relative;
             top: 23%;
-            margin: 0px 24px;
+            margin: 0px 20px;
             text-align: center;
             width: 8px;
             height: 8px;
@@ -54,13 +76,13 @@
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
+        align-items: center;
 
-        .item {
+        >div {
             margin: auto;
             background-color: white;
             width: 40px;
             height: 40px;
-            margin-right: 16px;
             border-radius: 100%;
             position: relative;
             transition: .3s;
@@ -94,74 +116,48 @@
 
         }
 
+        >div:not(:last-child) {
+            margin-right: 16px;
+        }
+
     }
 
     &__dropdown {
-        display: flex;
-        margin: auto;
         background-color: white;
         width: 122px;
         height: 40px;
         border-radius: 20px;
         position: relative;
         transition: .3s;
-
-        .languages {
-            display: block;
-
-            &__picker {
-                position: absolute;
-                width: 122px;
-                height: 104px;
-                background: #FFFFFF;
-                box-shadow: 0px 8px 16px rgba(116, 115, 115, 0.15);
-                border-radius: 20px;
-                align-items: flex-start;
-                margin: 0;
-                display: none;
+        padding: 8px;
+        
+        >div {
+            a {
+                content: '';
+                position: relative;
+                margin-left: 24px;
+                background: $lightGreyTwo;
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                transition: opacity 0.2s, top 0.2s, right 0.2s;
+                svg {
+                    stroke: $lightGreyOne;
+                    margin:6px;
+                    margin-top: 7px;
+                }
+                &:hover {
+                    background: $mainColor;
+                    fill: white;
+                }
+                &:hover svg {
+                    filter: brightness(0) invert(1);
+                }
             }
-        }
-
-        img {
-            margin: 10px;
-        }
-
-        .button-down {
-            position: relative;
-            padding: 5px;
-            margin-left: 24px;
-            background: $lightGreyTwo;
-            height: 24px;
-            width: 24px;
-            border-radius: 12px;
-            transition: all 0.2s linear;
-
-            &::after {
-                content: "";
-                position: static;
-                left: 50%;
-                top: 50%;
-                margin-left: 1px;
-                display: block;
-                width: 12px;
-                height: 12px;
-                border-top: 3px solid $lightGreyOne;
-                border-left: 3px solid $lightGreyOne;
-                top: 10px;
-                transform: rotate(225deg);
+            >span {
+                margin-left: 10px;
             }
-
-            &:hover {
-                background: $mainColor;
-                fill: white;
-
-            }
-        }
-
-        &__selected:after {
-            content: '';
-            display: block;
-
         }
     }
+    
 }
