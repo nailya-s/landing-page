@@ -20,6 +20,17 @@ body {
     background-image: url(../../img/backgroundBlobs.png);
     background-position-x: center;
     background-position-y: bottom;
+    @include breakpoint-up(medium);
+
+    @include breakpoint-down(medium) {
+        max-width: 768px;
+        max-height: 4554px;
+    }
+
+    @include breakpoint-down(small) {
+        max-width: 320px;
+        max-height: 3677px;
+    }
 }
 
 .container {
@@ -34,6 +45,22 @@ body {
     backdrop-filter: blur(150px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 48px;
+    @include breakpoint-up(medium);
+
+    @include breakpoint-down(medium) {
+        width: 704px;
+        height: 432px;
+        margin: 32px;
+    }
+
+    @include breakpoint-down(small) {
+        width: 280px;
+        height: 344px;
+        margin: 16px 20px;
+        border-radius: 0;
+    }
+    
+
 }
 
 //Flexbox
@@ -55,18 +82,43 @@ body {
 }
 
 //Text
-h1,
-h2 {
+h1 {
+    font-size: $font-xl;
+    line-height: 80px;
     font-weight: bold;
+    @include breakpoint-up(medium);
+
+    @include breakpoint-down(medium) {
+        font-family: 'Ubuntu';
+        font-size: $font-med;
+        line-height: 48px;
+        /* or 133% */
+        letter-spacing: 0.05em;
+    }
+    
+
+}
+
+h2 {
+    font-size: $font-l;
 }
 
 
+
 p {
-    
-    line-height: 36px;
+    font-size: $font-xs;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 24px;
+    line-height: 36px;
+    @include breakpoint-up(medium);
+    @include breakpoint-down(medium) {
+        font-size: $font-xss;
+        line-height: 24px;
+    }
+    @include breakpoint-down(small) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
 }
 
 input {
@@ -94,7 +146,8 @@ a {
 
 li {
     list-style-type: none;
-   }
+}
+
 //SELECT
 
 .select {
@@ -144,6 +197,21 @@ button,
         box-shadow: 0px 8px 16px rgba(25, 183, 187, 0.32), inset 0px 0px 16px rgba(0, 0, 0, 0.15);
     }
 
+    @include breakpoint-up(medium);
+
+    @include breakpoint-down(medium) {
+        width: 210px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    @include breakpoint-down(small) {
+        width: 153px;
+        height: 36px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
 }
 
 .scroll {
@@ -153,21 +221,23 @@ button,
 }
 
 
+
 //Visibility
 .hide-for-mobile {
     @include breakpoint-down(small) {
         display: none;
-      }
-  }
-  .hide-for-tablets {
-    
-  }
-  
+    }
+}
+
+.hide-for-tablets {
+    @include breakpoint-up(medium);
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
 .hide-for-desktop {
     @include breakpoint-up(large) {
-      display: none;
+        display: none;
     }
-  }
-
-
-
+}
