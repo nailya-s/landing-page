@@ -30,6 +30,7 @@ body {
     @include breakpoint-down(small) {
         max-width: 320px;
         max-height: 3677px;
+
     }
 }
 
@@ -59,7 +60,7 @@ body {
         margin: 16px 20px;
         border-radius: 0;
     }
-    
+
 
 }
 
@@ -95,7 +96,7 @@ h1 {
         /* or 133% */
         letter-spacing: 0.05em;
     }
-    
+
 
 }
 
@@ -110,15 +111,17 @@ p {
     font-weight: 300;
     line-height: 36px;
     @include breakpoint-up(medium);
+
     @include breakpoint-down(medium) {
         font-size: $font-xss;
         line-height: 24px;
     }
+
     @include breakpoint-down(small) {
         font-size: 14px;
         line-height: 20px;
     }
-    
+
 }
 
 input {
@@ -218,6 +221,15 @@ button,
     position: absolute;
     margin-top: 976px;
     margin-left: 936px;
+
+    @include breakpoint-down(small) {
+    @include breakpoint-up(medium) {
+        display: none;
+    }
+        @include breakpoint-down(small) {
+            display: none;
+        }
+    }
 }
 
 
@@ -231,6 +243,7 @@ button,
 
 .hide-for-tablets {
     @include breakpoint-up(medium);
+
     @include breakpoint-down(medium) {
         display: none;
     }

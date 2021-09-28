@@ -241,6 +241,18 @@ button:active,
   margin-left: 936px;
 }
 
+@media (max-width: 20em) and (min-width: 48em) {
+  .scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 20em) and (max-width: 20em) {
+  .scroll {
+    display: none;
+  }
+}
+
 @media (max-width: 20em) {
   .hide-for-mobile {
     display: none;
@@ -277,7 +289,7 @@ button:active,
 
 @media (max-width: 20em) {
   .header {
-    width: 320px;
+    width: 300px;
     height: 48px;
     margin: 0;
   }
@@ -650,6 +662,8 @@ button:active,
     margin-top: 45px;
     margin-bottom: 51px;
     margin-left: 30px;
+    width: 218px;
+    height: 247px;
   }
   .main__container .logo > svg {
     width: 218px;
