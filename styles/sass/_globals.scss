@@ -82,6 +82,7 @@ body {
 
 }
 
+
 //Text
 h1 {
     font-size: $font-xl;
@@ -111,7 +112,6 @@ p {
     font-weight: 300;
     line-height: 36px;
     @include breakpoint-up(medium);
-
     @include breakpoint-down(medium) {
         font-size: $font-xss;
         line-height: 24px;
@@ -144,6 +144,7 @@ input {
 
 a {
     text-decoration: none;
+
 }
 
 

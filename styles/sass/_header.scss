@@ -4,12 +4,22 @@
     display: block;
     position: fixed;
     z-index: 3;
+
+    &.overlay {
+        margin-top: 0;
+        background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0px 12px 24px rgba(126, 120, 120, 0.25);
+        backdrop-filter: blur(150px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 16px;
+    }
+
     @include breakpoint-up(medium);
 
     @include breakpoint-down(medium) {
         width: 704px;
         height: 72px;
-        margin-top: 21px;
+        margin-top: 0px;
     }
 
     @include breakpoint-down(small) {
@@ -58,11 +68,17 @@
             font-size: $font-xss;
             line-height: 24px;
             line-height: 24px;
+            @include breakpoint-up(medium);
+
+            @include breakpoint-down(medium) {
+                font-size: 14px;
+                line-height: 24px;
+            }
         }
     }
 
 
-    &__menu {
+    &__toggle {
         background-color: $mainColor;
         width: 32px;
         height: 32px;
@@ -122,6 +138,16 @@
         justify-content: space-between;
         list-style-type: none;
         padding-right: 205px;
+        @include breakpoint-up(medium);
+
+        @include breakpoint-down(medium) {
+            position: absolute;
+            padding: 0px;
+            margin-right: 0;
+            padding-left: 0;
+            margin: -25px;
+
+        }
 
         .circle {
             position: relative;
@@ -132,6 +158,12 @@
             height: 8px;
             background: $lightGreyOne;
             border-radius: 100px;
+            @include breakpoint-up(medium);
+
+            @include breakpoint-down(medium) {
+                margin: 0px 8px;
+
+            }
         }
 
         .verticalLine {
@@ -139,6 +171,23 @@
             height: 32px;
             background-color: $mainColor;
             margin: 16px;
+            @include breakpoint-up(medium);
+
+            @include breakpoint-down(medium) {
+                height: 24px;
+
+            }
+        }
+
+        &.overlay {
+            width: 100%;
+            height: 100%;
+            margin: -30px;
+            padding-right: 0px;
+            display: flex;
+            align-content: center;
+            flex-wrap: nowrap;
+            align-items: flex-start;
         }
     }
 
@@ -148,9 +197,11 @@
         flex-direction: row;
         align-items: center;
         @include breakpoint-up(medium);
+
         @include breakpoint-down(medium) {
             margin-left: 90px;
         }
+
         @include breakpoint-down(small) {
             margin-left: 60px;
         }
@@ -163,26 +214,31 @@
             border-radius: 100%;
             position: relative;
             transition: .3s;
+
             &:first-child {
-                display: none;   
+                display: none;
             }
+
             @include breakpoint-up(medium);
+
             @include breakpoint-down(medium) {
                 width: 32px;
                 height: 32px;
             }
+
             @include breakpoint-down(small) {
                 &:not(:first-child) {
-                    display: none; 
-                    
+                    display: none;
+
                 }
+
                 &:first-child {
-                    display: block;   
+                    display: block;
                     width: 28px;
                     height: 28px;
-                    margin:0;
+                    margin: 0;
                 }
-        
+
             }
 
             img {
@@ -199,10 +255,11 @@
                     width: 16px;
                     height: 16px;
                 }
+
                 @include breakpoint-down(small) {
                     width: 12px;
                     height: 12px;
-                    
+
                 }
 
             }
@@ -225,7 +282,11 @@
 
         }
 
-        
+        &.hide {
+            display: none;
+        }
+
+
 
     }
 
@@ -287,5 +348,13 @@
             padding-top: 12px;
         }
     }
+
+    &__menu {
+        position: absolute;
+        width: 320px;
+        height: 413px;
+
+    }
+
 
 }
