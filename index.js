@@ -6,7 +6,9 @@ const logo = document.querySelector('.header__logo');
 const networks = document.querySelector('.header__networks');
 const dropdown = document.querySelector('.header__dropdown');
 const btnArrow = document.querySelector('#btnArrow');
-const languages = document.querySelector('.header__languages')
+const languages = document.querySelector('.header__languages');
+const showBtn = document.querySelector('.showBtn');
+const cases = document.querySelectorAll('.cases__card');
 
 
 
@@ -36,16 +38,31 @@ btnHamburger.addEventListener('click', function(){
     }  
   });
 
+  //scroll
 
   btnArrow.addEventListener('click', function(){
-    console.log('click hamburger');
-  
-    if(btnArrow.classList.contains('clicked')){ // ;
+    
+    if(btnArrow.classList.contains('clicked')){ 
         btnArrow.classList.remove('clicked');
         languages.classList.remove('clicked');
     }
-    else { // Open Hamburger Menu
+    else { 
         btnArrow.classList.add('clicked');
         languages.classList.add('clicked');
     }  
+  });
+
+  window.addEventListener("scroll", function(){
+      header.classList.toggle("overlay", window.scrollY > 0);
+  });
+
+  //cases 
+
+  showBtn.addEventListener('click', function(){
+  console.log ('clicked');
+    showBtn.classList.add('clicked');
+    cases.forEach(el =>{
+        el.classList.remove('hide-for-desktop');
+        el.classList.add('clicked');
+    })
   });
