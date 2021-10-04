@@ -63,7 +63,7 @@ body {
 
 .backgroundImage {
   width: 1920px;
-  height: 1080px;
+  height: auto;
   background-image: url(../../img/backgroundBlobs.png);
   background-position: 50% 50%;
   padding-top: 60px;
@@ -1232,6 +1232,14 @@ button:active,
   display: flex;
 }
 
+@media (max-width: 48em) {
+  .cases__example {
+    width: 656px;
+    height: 709px;
+    margin-left: 24px;
+  }
+}
+
 @media (max-width: 20em) {
   .cases__example {
     width: 248px;
@@ -1240,19 +1248,22 @@ button:active,
   }
 }
 
-.cases__example h2, .cases__example h5 {
+.cases__example h2,
+.cases__example h5 {
   color: #19B7BB;
   font-weight: bold;
   margin: 0;
 }
 
 @media (max-width: 20em) {
-  .cases__example h2, .cases__example h5 {
+  .cases__example h2,
+  .cases__example h5 {
     font-size: 18px;
   }
 }
 
-.cases__example h2 p, .cases__example h5 p {
+.cases__example h2 p,
+.cases__example h5 p {
   font-size: 16px;
 }
 
@@ -1263,6 +1274,12 @@ button:active,
 
 .cases__container {
   margin: 40px;
+}
+
+@media (max-width: 48em) {
+  .cases__container {
+    padding-left: 24px;
+  }
 }
 
 .cases__container .title {

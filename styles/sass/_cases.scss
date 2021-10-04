@@ -1,5 +1,6 @@
 .cases {
     font-family: 'Gotham Pro';
+
     h1 {
         margin-top: 108px;
         margin-left: 60px;
@@ -7,11 +8,12 @@
 
         @include breakpoint-down(medium) {
             font-size: $font-l;
-            margin-top:0;
+            margin-top: 0;
         }
+
         @include breakpoint-down(small) {
             font-size: $font-xs;
-            margin-top:0;
+            margin-top: 0;
             margin-left: 20px;
             margin-bottom: 16px;
         }
@@ -26,11 +28,12 @@
         @include breakpoint-down(medium) {
             font-size: $font-med+4;
         }
+
         @include breakpoint-down(small) {
             font-size: $font-xss+2;
             margin-left: 20px;
             margin-bottom: 16px;
-          
+
         }
     }
 
@@ -42,9 +45,10 @@
         @include breakpoint-down(medium) {
             font-size: 16px;
         }
+
         @include breakpoint-down(small) {
             font-size: 14px;
-            
+
         }
     }
 
@@ -70,7 +74,7 @@
                 width: 280px;
                 height: 67px;
             }
-            
+
         }
 
     }
@@ -86,7 +90,7 @@
             overflow-x: scroll;
             padding-top: 24px;
         }
-        
+
 
     }
 
@@ -99,11 +103,13 @@
         box-shadow: 0px 8px 32px rgba(103, 97, 97, 0.1);
         border-radius: 12px;
         font-size: $font-xss;
+
         @include breakpoint-down(medium) {
             width: 416px;
             height: 260px;
             margin-bottom: 16px;
         }
+
         @include breakpoint-down(small) {
             width: 224px;
             height: 208px;
@@ -121,9 +127,9 @@
                 height: 36px;
                 margin-left: 12px;
                 margin-top: 12px;
-                margin-bottom:0;
+                margin-bottom: 0;
             }
-    
+
         }
 
         >h5 {
@@ -132,15 +138,12 @@
             margin-bottom: 16px;
 
             @include breakpoint-down(small) {
-                margin-bottom:0;
+                margin-bottom: 0;
                 margin-left: 14px;
             }
 
             >div {
-                @include breakpoint-down(small) {
-                    
-                   
-                }
+                @include breakpoint-down(small) {}
 
                 &.country {
                     display: inline-flex;
@@ -160,10 +163,11 @@
             margin-left: 22px;
             width: 370px;
             height: 72px;
+
             @include breakpoint-down(small) {
-                width:200px;
+                width: 200px;
                 height: 80px;
-                margin-left:12px;
+                margin-left: 12px;
                 margin-top: 8px;
             }
 
@@ -222,14 +226,20 @@
         height: 745px;
         background: #FFFFFF;
         border-radius: 12px;
-        margin:0;
+        margin: 0;
         margin-left: 32px;
         display: none;
+
         &.clicked {
             display: flex;
         }
 
-   
+        @include breakpoint-down(medium) {
+            width: 656px;
+            height: 709px;
+            margin-left: 24px;
+        }
+
 
         @include breakpoint-down(small) {
             width: 248px;
@@ -237,81 +247,98 @@
             margin: 16px 27px;
         }
 
-        h2, h5 {
+        h2,
+        h5 {
             color: $mainColor;
-            font-weight:bold;
-            margin:0;
+            font-weight: bold;
+            margin: 0;
+
             @include breakpoint-down(small) {
                 font-size: $font-xss;
             }
+
             p {
                 font-size: 16px;
             }
         }
+
         h1 {
             font-weight: bold;
-            margin:0;
+            margin: 0;
         }
     }
+
     &__container {
-        margin:40px;
+        margin: 40px;
+        @include breakpoint-down(medium) {
+            padding-left: 24px;
+        }
 
         .title {
             flex-direction: column;
+
             >div {
-                &:not(:last-child){
+                &:not(:last-child) {
                     margin-bottom: 24px;
                 }
             }
+
             .text {
                 display: inline-flex;
                 font-weight: bold;
             }
+
             .client {
                 display: inline-flex;
                 color: black;
-             
-                
             }
         }
+
         .technologies {
             margin-right: 179px;
-            
-                h5 {
-                    font-weight: bold;
-                    color: black;
-                    margin: 0;
-                
-                
+
+            h5 {
+                font-weight: bold;
+                color: black;
+                margin: 0;
+
+
             }
-         
-                p {
-                    font-size: $font-xss;
-                
+
+            p {
+                font-size: $font-xss;
+
             }
         }
+
         .solution {
             h4 {
-                margin:0;
+                margin: 0;
                 color: $mainColor;
             }
         }
+
         .block {
-            width:480px;
+            width: 480px;
             height: auto;
-            margin:0;
+            margin: 0;
+
             h4 {
-                margin:0;
+                margin: 0;
                 margin-top: 24px;
             }
         }
+
         .divider {
-            margin-top:24px;
+            margin-top: 24px;
         }
+        
+
+        
         @include breakpoint-down(small) {
             margin-left: 16px;
         }
     }
-    
+
 
 }

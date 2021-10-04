@@ -9,7 +9,7 @@ const btnArrow = document.querySelector('#btnArrow');
 const languages = document.querySelector('.header__languages');
 const showBtn = document.querySelector('.showBtn');
 const cases = document.querySelectorAll('.cases__card');
-const btnDetails = document.querySelector('.smText');
+const btnDetails = document.querySelectorAll('.smText');
 const caseExample = document.querySelector('.cases__example');
 
 
@@ -68,7 +68,10 @@ btnHamburger.addEventListener('click', function(){
     });
   });
 
-btnDetails.addEventListener('click', function(){
-    event.preventDefault();
-    caseExample.classList.toggle('clicked');
+btnDetails.forEach((elem, i) =>{
+    elem.addEventListener('click', (event) => {
+        event.preventDefault();
+        caseExample.classList.toggle('clicked');
+    });
 });
+
