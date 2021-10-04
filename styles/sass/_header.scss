@@ -14,15 +14,11 @@
         /* Note: backdrop-filter has minimal browser support */
         border-radius: 16px;
         @include breakpoint-down(small) {
-            border-radius: 0px 0px 12px 12px;
-            margin-left: 0;
-            width: 320px;
-            
+            display: none
         }
     }
 
     @include breakpoint-up(medium);
-
     @include breakpoint-down(medium) {
         width: 704px;
         height: 72px;

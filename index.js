@@ -9,7 +9,8 @@ const btnArrow = document.querySelector('#btnArrow');
 const languages = document.querySelector('.header__languages');
 const showBtn = document.querySelector('.showBtn');
 const cases = document.querySelectorAll('.cases__card');
-
+const btnDetails = document.querySelector('.smText');
+const caseExample = document.querySelector('.cases__example');
 
 
 
@@ -64,5 +65,10 @@ btnHamburger.addEventListener('click', function(){
     cases.forEach(el =>{
         el.classList.remove('hide-for-desktop');
         el.classList.add('clicked');
-    })
+    });
   });
+
+btnDetails.addEventListener('click', function(){
+    event.preventDefault();
+    caseExample.classList.toggle('clicked');
+});

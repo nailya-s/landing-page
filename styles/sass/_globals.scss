@@ -100,6 +100,10 @@ body {
     &-ai-c {
         align-items: center;
     }
+    &-fd-col {
+        flex-direction: column;
+    }
+   
 
 }
 
@@ -129,6 +133,10 @@ h2 {
         line-height: 56px;
         letter-spacing: 0.05em;
     }
+}
+
+h4 {
+    font-size: $font-sm;
 }
 h5 {
     font-size: $font-xss;
@@ -275,9 +283,8 @@ button,
 }
 
 .hide-for-tablets {
-    @include breakpoint-up(medium);
-
-    @include breakpoint-down(medium) {
+    
+    @include breakpoint-down(medium and large) {
         display: none;
     }
 }
