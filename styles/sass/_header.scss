@@ -1,12 +1,14 @@
 .header {
-    width: 1800px;
+    max-width: 1920px; 
     height: 104px;
     display: block;
     position: fixed;
     z-index: 3;
-    margin-left: 60px;
+    margin: 0 auto;
+    padding-left: 60px;
 
     &.overlay {
+        width: 100%;
         margin-top: 0;
         background: rgba(255, 255, 255, 0.7);
         box-shadow: 0px 12px 24px rgba(126, 120, 120, 0.25);
@@ -21,21 +23,18 @@
     @include breakpoint-down(medium) {
         width: 704px;
         height: 72px;
-        margin-top: 0px;
-        margin-left: 32px;
+        padding-left: 32px;
     }
 
     @include breakpoint-down(small) {
         width: 300px;
         height: 48px;
         margin: 0;
-        margin-left: 16px;
+        padding-left: 16px;
         
     }
 
     &__logo img {
-        @include breakpoint-up(medium);
-
         @include breakpoint-down(medium) {
             width: 208px;
             height: 24px;
@@ -49,8 +48,8 @@
 
     nav {
         position: relative;
+        width:100%;
         margin-top: 15px;
-        margin-left: 56px;
         margin-right: 32px;
 
         @include breakpoint-up(medium);
@@ -74,7 +73,6 @@
             line-height: 24px;
             line-height: 24px;
             @include breakpoint-up(medium);
-
             @include breakpoint-down(medium) {
                 font-size: 14px;
                 line-height: 24px;

@@ -16,6 +16,7 @@ body {
     padding: 0;
     max-width: 100%;
     background: #EDF1F4;
+    overflow-x:hidden,
 }
 
 .backgroundImage {
@@ -41,9 +42,8 @@ body {
 
 .container {
     position: relative;
-    margin-left: 60px;
-    margin-right: 60px;
-    width: 1800px;
+    margin: 0 auto;
+    max-width: 1920px;
     height: 960px;
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 0px 24px rgba(126, 120, 120, 0.1);
@@ -55,14 +55,12 @@ body {
     @include breakpoint-down(medium) {
         width: 704px;
         height: 432px;
-        margin-left: 32px;
         
     }
 
     @include breakpoint-down(small) {
         width: 280px;
         height: 344px;
-        margin: 0px 20px;
         border-radius: 12px;
     }
 
@@ -267,7 +265,6 @@ button,
 }
 
 .hide-for-tablets {
-    
     @include breakpoint-down(medium and large) {
         display: none;
     }

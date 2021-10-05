@@ -61,6 +61,7 @@
     &__examples {
         .container {
             height: auto;
+            
         }
     }
 
@@ -233,6 +234,23 @@
         &.clicked {
             display: flex;
         }
+        .case-heading {
+            @include breakpoint-down(small) {
+                flex-direction: column;
+            }
+            
+        }
+
+        .case-description {
+            display: flex;
+            justify-content: space-between;
+            @include breakpoint-down(small) {
+                flex-direction: column;
+            }
+        }
+        .btnConsult {
+            text-align: center;
+        }
 
         @include breakpoint-down(medium) {
             width: 656px;
@@ -243,7 +261,7 @@
 
         @include breakpoint-down(small) {
             width: 248px;
-            height: 928px;
+            height: 100%;
             margin: 16px 27px;
         }
 
@@ -272,11 +290,16 @@
 
     &__container {
         margin: 40px;
+        
 
         @include breakpoint-down(medium) {
             padding-left: 24px;
             width: 656px;
             height: 709px;
+        }
+        @include breakpoint-down(small) {
+            width: 248px;
+            height: 100%;
         }
 
         .title {
@@ -285,6 +308,9 @@
             >div {
                 &:not(:last-child) {
                     margin-bottom: 24px;
+                    @include breakpoint-down(small) {
+                        margin-bottom: 0;
+                    }
                 }
             }
 
@@ -322,6 +348,9 @@
                 @include breakpoint-down(medium) {
                     font-size: 14px;
                 }
+                @include breakpoint-down(medium) {
+                    width:inherit;
+                }
             }
         }
 
@@ -333,12 +362,17 @@
         }
 
         .block {
-            width: 480px;
+            width: 100%;
             height: auto;
             margin: 0;
 
             @include breakpoint-down(medium) {
                 width: 608px;
+                height: auto;
+            }
+
+            @include breakpoint-down(small) {
+                width: 216px;
                 height: auto;
             }
 
