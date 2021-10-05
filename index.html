@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
-<body>
-    <main class="backgroundImage">
+<body class="backgroundImage">
+    <main>
         <header class="header">
             <div class="header__container">
                 <nav class="flex flex-jc-sb flex-ai-c">
@@ -34,60 +34,63 @@
                             <li><a href="#connect">История компании</a></li>
                         </ul>
                     </div>
-                    <div class="header__networks flex-ai-c">
-                        <div>
-                            <img src="./img/icons/call-answer 1.svg" alt="call-answer" />
-                        </div>
-                        <div>
-                            <img src="./img/icons/instagram.svg" alt="instagram" />
-                        </div>
-                        <div>
-                            <img src="./img/icons/telegram.svg" alt="telegram" />
-                        </div>
-                        <div>
-                            <img src="./img/icons/whatsapp 1.svg" alt="whatsapp" />
-                        </div>
+                    <div class="header__info">
+                        <div class="header__networks flex-ai-c">
+                            <div>
+                                <img src="./img/icons/call-answer 1.svg" alt="call-answer" />
+                            </div>
+                            <div>
+                                <img src="./img/icons/instagram.svg" alt="instagram" />
+                            </div>
+                            <div>
+                                <img src="./img/icons/telegram.svg" alt="telegram" />
+                            </div>
+                            <div>
+                                <img src="./img/icons/whatsapp 1.svg" alt="whatsapp" />
+                            </div>
 
-                    </div>
-                    <div class="header__dropdown flex flex-ai-c flex-jc-c hide-for-mobile">
-                        <div class="flex flex-jc-sb flex-ai-c">
-                            <img src="./img/icons/language.svg" alt="language" />
-                            <span>
-                                Рус
-                            </span>
-                            <a id="btnArrow" href="#">
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0)">
-                                        <path
-                                            d="M5.99997 9.42021C5.7849 9.42021 5.56987 9.33809 5.4059 9.1742L0.24617 4.01442C-0.0820565 3.6862 -0.0820565 3.15404 0.24617 2.82594C0.574263 2.49785 1.10632 2.49785 1.43457 2.82594L5.99997 7.3916L10.5654 2.8261C10.8936 2.49801 11.4256 2.49801 11.7537 2.8261C12.0821 3.15419 12.0821 3.68636 11.7537 4.01458L6.59404 9.17436C6.42999 9.33828 6.21495 9.42021 5.99997 9.42021Z"
-                                            fill="#BCBCC7" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0">
-                                            <rect width="12" height="12" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
                         </div>
-                        <div class="header__languages hide-for-mobile">
-                            <div>
-                                <a href="#"> <img src="./img/icons/russia 1.svg" alt="russian" /> Рус </a>
+                        <div class="header__dropdown flex flex-ai-c flex-jc-c hide-for-mobile">
+                            <div class="flex flex-jc-sb flex-ai-c">
+                                <img src="./img/icons/language.svg" alt="language" />
+                                <span>
+                                    Рус
+                                </span>
+                                <a id="btnArrow" href="#">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M5.99997 9.42021C5.7849 9.42021 5.56987 9.33809 5.4059 9.1742L0.24617 4.01442C-0.0820565 3.6862 -0.0820565 3.15404 0.24617 2.82594C0.574263 2.49785 1.10632 2.49785 1.43457 2.82594L5.99997 7.3916L10.5654 2.8261C10.8936 2.49801 11.4256 2.49801 11.7537 2.8261C12.0821 3.15419 12.0821 3.68636 11.7537 4.01458L6.59404 9.17436C6.42999 9.33828 6.21495 9.42021 5.99997 9.42021Z"
+                                                fill="#BCBCC7" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="12" height="12" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
                             </div>
-                            <div>
-                                <a href="#"> <img src="./img/icons/us.svg" alt="english" /> Eng </a>
-                            </div>
-                            <div>
-                                <a href="#"> <img src="./img/icons/kaz.svg" alt="kazakh" /> Qaz </a>
+                            <div class="header__languages hide-for-mobile">
+                                <div>
+                                    <a href="#"> <img src="./img/icons/russia 1.svg" alt="russian" /> Рус </a>
+                                </div>
+                                <div>
+                                    <a href="#"> <img src="./img/icons/us.svg" alt="english" /> Eng </a>
+                                </div>
+                                <div>
+                                    <a href="#"> <img src="./img/icons/kaz.svg" alt="kazakh" /> Qaz </a>
+                                </div>
                             </div>
                         </div>
+                        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
                     </div>
-                    <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
+
 
                 </nav>
             </div>
@@ -161,7 +164,7 @@
 
                     <div class="main__headline">
                         <div class="main__text">
-                            <h1 class="">
+                            <h1>
                                 Трансформируем <br /> бизнес задачи в IT
                             </h1>
                             <p>
@@ -170,7 +173,6 @@
                             </p>
                             <button>Хочу работать с вами</button>
                             <button class="special">История компании</button>
-
                         </div>
                         <div>
                         </div>
@@ -183,218 +185,226 @@
             <a class="scroll hide-for-mobile hide-for-tablets" href="#"><img src="./img/scroll.svg" alt=""></a>
         </div>
     </main>
-
-    <div class="backgroundImage">
-        <section class="cases">
-            <h1>
-                Наши кейсы
-            </h1>
-            <div class="cases__examples">
-                <div class="container ">
-                    <div class="cases__cards flex">
-                        <div class="cases__card">
-                            <img src="img/companies/logodark 1.svg" class="logo">
-                            <h5 class="title">
-                                <div class="company"> TUTORR&#44; </div>
-                                <div class="country">Латвия</div>
-                            </h5>
-                            <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
-                                FREELANCE.</p>
-                            <p class="smText"><a href=""> Подробнее</a>
-                                <img src="img/arrow_more.svg"></p>
-                        </div>
-                        <div class="cases__card">
-                            <img src="img/companies/logodark 1.svg" class="logo">
-                            <h5 class="title">
-                                <div class="company"> TUTORR&#44; </div>
-                                <div class="country">Латвия</div>
-                            </h5>
-                            <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
-                                FREELANCE.</p>
-                            <p class="smText"><a href=""> Подробнее</a>
-                                <img src="img/arrow_more.svg"></p>
-                        </div>
-                        <div class="cases__card">
-                            <img src="img/companies/logodark 1.svg" class="logo">
-                            <h5 class="title">
-                                <div class="company"> TUTORR&#44; </div>
-                                <div class="country">Латвия</div>
-                            </h5>
-                            <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
-                                FREELANCE.</p>
-                            <p class="smText"><a href=""> Подробнее</a>
-                                <img src="img/arrow_more.svg"></p>
-                        </div>
-                        <div class="cases__card hide-for-desktop">
-                            <img src="img/companies/logodark 1.svg" class="logo">
-                            <h5 class="title">
-                                <div class="company"> TUTORR&#44; </div>
-                                <div class="country">Латвия</div>
-                            </h5>
-                            <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
-                                FREELANCE.</p>
-                            <p class="smText"><a href=""> Подробнее</a>
-                                <img src="img/arrow_more.svg"></p>
-                        </div>
-                        <div class="cases__card hide-for-desktop">
-                            <img src="img/companies/logodark 1.svg" class="logo">
-                            <h5 class="title">
-                                <div class="company"> TUTORR&#44; </div>
-                                <div class="country">Латвия</div>
-                            </h5>
-                            <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
-                                FREELANCE.</p>
-                            <p class="smText"><a href=""> Подробнее</a>
-                                <img src="img/arrow_more.svg"></p>
-                        </div>
-                        <div class="cases__card hide-for-desktop">
-                            <img src="img/companies/logodark 1.svg" class="logo">
-                            <h5 class="title">
-                                <div class="company"> TUTORR&#44; </div>
-                                <div class="country">Латвия</div>
-                            </h5>
-                            <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
-                                FREELANCE.</p>
-                            <p class="smText"><a href=""> Подробнее</a>
-                                <img src="img/arrow_more.svg"></p>
-                        </div>
-                        <div class="cases__card hide-for-desktop">
-                            <img src="img/companies/logodark 1.svg" class="logo">
-                            <h5 class="title">
-                                <div class="company"> TUTORR&#44; </div>
-                                <div class="country">Латвия</div>
-                            </h5>
-                            <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
-                                FREELANCE.</p>
-                            <p class="smText"><a href=""> Подробнее</a>
-                                <img src="img/arrow_more.svg"></p>
-                        </div>
-                        <div class="cases__card hide-for-desktop">
-                            <img src="img/companies/logodark 1.svg" class="logo">
-                            <h5 class="title">
-                                <div class="company"> TUTORR&#44; </div>
-                                <div class="country">Латвия</div>
-                            </h5>
-                            <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
-                                FREELANCE.</p>
-                            <p class="smText"><a href=""> Подробнее</a>
-                                <img src="img/arrow_more.svg"></p>
-                        </div>
-                        <div class="cases__card hide-for-mobile hide-for-tablets">
-                            <div class="showBtn">
-                                <img src="img/arrow_cases.png" />
-                            </div>
-                            <a class="caseMore" href="#"> Все кейсы</a>
-                        </div>
+    <section class="cases">
+        <h1>
+            Наши кейсы
+        </h1>
+        <div class="cases__examples">
+            <div class="container ">
+                <div class="cases__cards flex">
+                    <div class="cases__card">
+                        <img src="img/companies/logodark 1.svg" class="logo">
+                        <h5 class="title">
+                            <div class="company"> TUTORR&#44; </div>
+                            <div class="country">Латвия</div>
+                        </h5>
+                        <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
+                            FREELANCE.</p>
+                        <p class="smText"><a href=""> Подробнее</a>
+                            <img src="img/arrow_more.svg"></p>
                     </div>
-                    <div class="cases__example flex flex-fd-col flex-ai-c">
+                    <div class="cases__card">
+                        <img src="img/companies/logodark 1.svg" class="logo">
+                        <h5 class="title">
+                            <div class="company"> TUTORR&#44; </div>
+                            <div class="country">Латвия</div>
+                        </h5>
+                        <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
+                            FREELANCE.</p>
+                        <p class="smText"><a href=""> Подробнее</a>
+                            <img src="img/arrow_more.svg"></p>
+                    </div>
+                    <div class="cases__card">
+                        <img src="img/companies/logodark 1.svg" class="logo">
+                        <h5 class="title">
+                            <div class="company"> TUTORR&#44; </div>
+                            <div class="country">Латвия</div>
+                        </h5>
+                        <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
+                            FREELANCE.</p>
+                        <p class="smText"><a href=""> Подробнее</a>
+                            <img src="img/arrow_more.svg"></p>
+                    </div>
+                    <div class="cases__card hide-for-desktop">
+                        <img src="img/companies/logodark 1.svg" class="logo">
+                        <h5 class="title">
+                            <div class="company"> TUTORR&#44; </div>
+                            <div class="country">Латвия</div>
+                        </h5>
+                        <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
+                            FREELANCE.</p>
+                        <p class="smText"><a href=""> Подробнее</a>
+                            <img src="img/arrow_more.svg"></p>
+                    </div>
+                    <div class="cases__card hide-for-desktop">
+                        <img src="img/companies/logodark 1.svg" class="logo">
+                        <h5 class="title">
+                            <div class="company"> TUTORR&#44; </div>
+                            <div class="country">Латвия</div>
+                        </h5>
+                        <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
+                            FREELANCE.</p>
+                        <p class="smText"><a href=""> Подробнее</a>
+                            <img src="img/arrow_more.svg"></p>
+                    </div>
+                    <div class="cases__card hide-for-desktop">
+                        <img src="img/companies/logodark 1.svg" class="logo">
+                        <h5 class="title">
+                            <div class="company"> TUTORR&#44; </div>
+                            <div class="country">Латвия</div>
+                        </h5>
+                        <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
+                            FREELANCE.</p>
+                        <p class="smText"><a href=""> Подробнее</a>
+                            <img src="img/arrow_more.svg"></p>
+                    </div>
+                    <div class="cases__card hide-for-desktop">
+                        <img src="img/companies/logodark 1.svg" class="logo">
+                        <h5 class="title">
+                            <div class="company"> TUTORR&#44; </div>
+                            <div class="country">Латвия</div>
+                        </h5>
+                        <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
+                            FREELANCE.</p>
+                        <p class="smText"><a href=""> Подробнее</a>
+                            <img src="img/arrow_more.svg"></p>
+                    </div>
+                    <div class="cases__card hide-for-desktop">
+                        <img src="img/companies/logodark 1.svg" class="logo">
+                        <h5 class="title">
+                            <div class="company"> TUTORR&#44; </div>
+                            <div class="country">Латвия</div>
+                        </h5>
+                        <p class="text">Платформа онлайн обучения и <br> менторства в сфере DIGITAL, IT и
+                            FREELANCE.</p>
+                        <p class="smText"><a href=""> Подробнее</a>
+                            <img src="img/arrow_more.svg"></p>
+                    </div>
+                    <div class="cases__card hide-for-mobile hide-for-tablets">
+                        <div class="showBtn">
+                            <img src="img/arrow_cases.png" />
+                        </div>
+                        <a class="caseMore" href="#"> Все кейсы</a>
+                    </div>
+                </div>
+                <div class="cases__example flex flex-fd-col flex-ai-c">
 
-                        <div class="cases__container ">
-                            <div class="flex flex-jc-sb">
-                                <div class="title flex">
-                                    <div class="">
-                                        <h2>
-                                            Кейс&#58; 
-                                        </h2>
-                                    </div>
-                                    <div class="">
-                                        <h1>
-                                            TUTORR
-                                        </h1>
-                                    </div>
-                                    <div class="">
-                                        <h5>
-                                            <div class="text"> Заказчик&#58; </div>
-                                            <div class="client">Tutorr, Латвия</div>
-                                            </h5>
-                                    </div>
+                    <div class="cases__container ">
+                        <div class="flex flex-jc-sb">
+                            <div class="title flex">
+                                <div class="">
+                                    <h2>
+                                        Кейс&#58;
+                                    </h2>
                                 </div>
-                                <div class="technologies">
-                                        <h5>Используемые технологии&#58;</h5>
+                                <div class="">
+                                    <h1>
+                                        TUTORR
+                                    </h1>
+                                </div>
+                                <div class="">
+                                    <h5>
+                                        <div class="text"> Заказчик&#58; </div>
+                                        <div class="client">Tutorr, Латвия</div>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="technologies">
+                                <h5>Используемые технологии&#58;</h5>
+                                <p>
+                                    PHP, MVC, Java, Vue.js, Blockchain,<br> SuperTurboMegaDrive
+                                </p>
+                            </div>
+                        </div>
+                        <div class="divider">
+                            <img src="img/divider.png" />
+                        </div>
+                        <div class="case-description">
+                            <div class="block">
+                                <div>
+                                   
+                                        <h4>Проблема</h4>
+                                   
+                                    
                                         <p>
-                                            PHP, MVC, Java, Vue.js, Blockchain,<br> SuperTurboMegaDrive
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus lacinia
+                                            nullam viverra tristique habitant ut enim aliquet. Egestas laoreet venenatis
+                                            risus fringilla in. Neque, massa montes, enim velit. Eu condimentum
+                                            adipiscing risus phasellus consequat morbi arcu. Risus vitae, cum egestas
+                                            felis placerat. Est sapien a, at mattis. A massa egestas nulla felis nulla
+                                            mi sed faucibus. Ipsum mauris dui, ut integer imperdiet neque. At ornare vel
+                                            nulla pellentesque nulla dui vulputate lacus et.
                                         </p>
+                                   
                                 </div>
                             </div>
-                            <div class="divider">
-                                <img src="img/divider.png"/>
+                            <div class="block">
+                            
+                                        <h4>Задача</h4>
+                              
+                                  
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus lacinia nullam
+                                            viverra tristique habitant ut enim aliquet. Egestas laoreet venenatis risus
+                                            fringilla in. Neque, massa montes, enim velit.</p>
+                            
+
                             </div>
-                            <div class="flex flex-jc-sb ">
-                                <div class="block">
-                                    <div class="problem">
-                                        <div class="problem__title">
-                                            <h4>Проблема</h4>
-                                        </div>
-                                        <div class="problem__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus lacinia nullam viverra tristique habitant ut enim aliquet. Egestas laoreet venenatis risus fringilla in. Neque, massa montes, enim velit. Eu condimentum adipiscing risus phasellus consequat morbi arcu. Risus vitae, cum egestas felis placerat. Est sapien a, at mattis. A massa egestas nulla felis nulla mi sed faucibus. Ipsum mauris dui, ut integer imperdiet neque. At ornare vel nulla pellentesque nulla dui vulputate lacus et.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="block">
-                                    <div class="task">
-                                        <div class="task__title">
-                                            <h4>Задача</h4>
-                                        </div>
-                                        <div class="task__text">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus lacinia nullam viverra tristique habitant ut enim aliquet. Egestas laoreet venenatis risus fringilla in. Neque, massa montes, enim velit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="block">
-                                    <div class="solution">
-                                        <div class="solution__title">
-                                            <h4>Решение</h4>
-                                        </div>
-                                        <div class="solution__text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus lacinia nullam viverra tristique habitant ut enim aliquet. Egestas laoreet venenatis risus fringilla in. Neque, massa montes, enim velit. Eu condimentum adipiscing risus phasellus consequat morbi arcu. Risus vitae, cum egestas felis placerat. Est sapien a, at mattis. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="block">
+                                <div class="solution">
+               
+                                        <h4>Решение</h4>
+   
+                          
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus lacinia
+                                            nullam viverra tristique habitant ut enim aliquet. Egestas laoreet venenatis
+                                            risus fringilla in. Neque, massa montes, enim velit. Eu condimentum
+                                            adipiscing risus phasellus consequat morbi arcu. Risus vitae, cum egestas
+                                            felis placerat. Est sapien a, at mattis.
+                                        </p>
                                 
+                                </div>
+                            </div>
+                            <button>Заказать консультацию</button>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class="">
+            <h2>
+                Наши партнеры
+            </h2>
+            <div class="cases__partners">
+                <div class="container">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/companies/company1.svg" class="company1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/companies/company 2.svg" class="company 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/companies/company 3.svg" class="company 3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/companies/company 4.svg" class="company 4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/companies/company 5.svg" class="company 5">
                             </div>
                         </div>
-                        
-                        <button>Заказать консультацию</button>
                     </div>
                 </div>
 
-            </div>
-<div class="">
-    <h2>
-        Наши партнеры
-    </h2>
-    <div class="cases__partners">
-        <div class="container">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="img/companies/company1.svg" class="company1">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/companies/company 2.svg" class="company 2">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/companies/company 3.svg" class="company 3">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/companies/company 4.svg" class="company 4">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/companies/company 5.svg" class="company 5">
-                    </div>
-                </div>
             </div>
         </div>
 
-    </div>
-</div>
-    
 
     </section>
     </div>

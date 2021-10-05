@@ -1,5 +1,11 @@
 .cases {
     font-family: 'Gotham Pro';
+    max-width:1920px;
+    margin: 0 auto;
+    
+    @include breakpoint-down(medium) {
+        margin-top: 48px;
+    }
 
     h1 {
         margin-top: 108px;
@@ -23,7 +29,7 @@
         margin-top: 24px;
         margin-left: 60px;
         margin-bottom: 16px;
-        @include breakpoint-up(medium);
+       
 
         @include breakpoint-down(medium) {
             font-size: $font-med+4;
@@ -55,12 +61,6 @@
     &__examples {
         .container {
             height: auto;
-            @include breakpoint-up(medium);
-
-            @include breakpoint-down(medium) {
-                width: 100%;
-                height: auto;
-            }
         }
     }
 
@@ -236,7 +236,7 @@
 
         @include breakpoint-down(medium) {
             width: 656px;
-            height: 709px;
+            height: 100%;
             margin-left: 24px;
         }
 
@@ -252,6 +252,8 @@
             color: $mainColor;
             font-weight: bold;
             margin: 0;
+
+            @include breakpoint-down(medium) {}
 
             @include breakpoint-down(small) {
                 font-size: $font-xss;
@@ -270,8 +272,11 @@
 
     &__container {
         margin: 40px;
+
         @include breakpoint-down(medium) {
             padding-left: 24px;
+            width: 656px;
+            height: 709px;
         }
 
         .title {
@@ -297,6 +302,12 @@
         .technologies {
             margin-right: 179px;
 
+            @include breakpoint-down(medium) {
+                margin-right: 32px;
+            }
+
+
+
             h5 {
                 font-weight: bold;
                 color: black;
@@ -308,6 +319,9 @@
             p {
                 font-size: $font-xss;
 
+                @include breakpoint-down(medium) {
+                    font-size: 14px;
+                }
             }
         }
 
@@ -323,18 +337,37 @@
             height: auto;
             margin: 0;
 
+            @include breakpoint-down(medium) {
+                width: 608px;
+                height: auto;
+            }
+
+            p {
+                @include breakpoint-down(medium) {
+                    font-size: 14px;
+                }
+
+            }
+
             h4 {
                 margin: 0;
                 margin-top: 24px;
+
+                @include breakpoint-down(medium) {
+                    font-size: $font-xs;
+                    margin-top: 0;
+                }
             }
         }
 
-        .divider {
-            margin-top: 24px;
+        .divider img {
+            @include breakpoint-down(medium) {
+                width: 608px;
+            }
         }
-        
 
-        
+
+
         @include breakpoint-down(small) {
             margin-left: 16px;
         }

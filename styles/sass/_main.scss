@@ -1,11 +1,12 @@
 .main {
-    
+    max-width:1920px;
+    margin: 0 auto;
+    position: relative;
+
     &__container {
         position: absolute;
         width: 1800px;
         height: 960px;
-        @include breakpoint-up(medium);
-
         @include breakpoint-down(medium) {
             width: 704px;
             height: 432px;

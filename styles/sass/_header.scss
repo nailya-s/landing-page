@@ -18,7 +18,6 @@
         }
     }
 
-    @include breakpoint-up(medium);
     @include breakpoint-down(medium) {
         width: 704px;
         height: 72px;
@@ -81,6 +80,9 @@
                 line-height: 24px;
             }
         }
+    }
+    &__info {
+        display: flex;
     }
 
 
@@ -152,8 +154,7 @@
         align-items: center;
         justify-content: space-between;
         list-style-type: none;
-        padding-right: 205px;
-        @include breakpoint-up(medium);
+        
 
         @include breakpoint-down(medium) {
             position: absolute;
@@ -163,6 +164,7 @@
             margin: -25px;
 
         }
+        
 
         .circle {
             position: relative;
