@@ -1,28 +1,36 @@
 .header {
-    max-width: 1920px; 
+    max-width: 1920px;
     height: 104px;
     display: block;
-    position: fixed;
+    /* position: fixed; */
     z-index: 3;
     margin: 0 auto;
-    padding-left: 60px;
+    padding-top: 10px;
 
-    &.overlay {
+    /* &.overlay {
         width: 100%;
         margin-top: 0;
         background: rgba(255, 255, 255, 0.7);
         box-shadow: 0px 12px 24px rgba(126, 120, 120, 0.25);
         backdrop-filter: blur(150px);
-        /* Note: backdrop-filter has minimal browser support */
         border-radius: 16px;
         @include breakpoint-down(small) {
             display: none
         }
+    } */
+
+    &__logo img {
+        @include breakpoint-down(medium) {
+            width: 208px;
+            height: 24px;
+        }
+        @include breakpoint-down(small) {
+            width: 128px;
+            height: 15px;
+        }
     }
 
     @include breakpoint-down(medium) {
-        width: 704px;
-        height: 72px;
         padding-left: 32px;
     }
 
@@ -31,33 +39,17 @@
         height: 48px;
         margin: 0;
         padding-left: 16px;
-        
+
     }
 
-    &__logo img {
-        @include breakpoint-down(medium) {
-            width: 208px;
-            height: 24px;
-        }
-
-        @include breakpoint-down(small) {
-            width: 128px;
-            height: 15px;
-        }
-    }
 
     nav {
         position: relative;
-        width:100%;
+        width: 100%;
         margin-top: 15px;
         margin-right: 32px;
 
-        @include breakpoint-up(medium);
-
         @include breakpoint-down(medium) {
-            margin-top: 15px;
-            margin-left: 32px;
-            margin-right: 32px;
         }
 
         @include breakpoint-down(small) {
@@ -73,16 +65,17 @@
             line-height: 24px;
             line-height: 24px;
             @include breakpoint-up(medium);
+
             @include breakpoint-down(medium) {
                 font-size: 14px;
                 line-height: 24px;
             }
         }
     }
+
     &__info {
         display: flex;
     }
-
 
     &__toggle {
         background-color: $mainColor;
@@ -95,9 +88,9 @@
 
         @include breakpoint-up(medium);
 
-            @include breakpoint-down(medium) {
-                margin-right: -10px;
-            }
+        @include breakpoint-down(medium) {
+            margin-right: -10px;
+        }
 
         @include breakpoint-down(small) {
             width: 28px;
@@ -139,8 +132,9 @@
                 margin-left: 12px;
             }
         }
+
         @include breakpoint-down(small) {
-            margin:0;
+            margin: 0;
         }
 
     }
@@ -152,7 +146,7 @@
         align-items: center;
         justify-content: space-between;
         list-style-type: none;
-        
+
 
         @include breakpoint-down(medium) {
             position: absolute;
@@ -162,7 +156,7 @@
             margin: -25px;
 
         }
-        
+
 
         .circle {
             position: relative;
@@ -317,7 +311,7 @@
         >div {
             a {
                 content: '';
-            
+
                 margin-left: 24px;
                 background: $lightGreyTwo;
                 height: 24px;
@@ -365,12 +359,15 @@
 
         >div {
             padding-top: 10px;
+
             a {
                 margin-left: 10px;
                 background: none;
+
                 img {
                     margin-right: 10px;
                 }
+
                 &:hover {
                     background: none;
                 }

@@ -1,29 +1,36 @@
 .main {
-    max-width:1920px;
+    max-width: 1920px;
     margin: 0 auto;
     position: relative;
-    
+
     &__col {
-        width: 100%;
-    }
-        
-    &__container {
-        position: absolute;
-        width: 1800px;
-        height: 960px;
-        @include breakpoint-down(medium) {
-            width: 704px;
-            height: 432px;
-            margin-right: 32px;
+        width: 50%;
+
+        .container_picture_right {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
         }
+    }
+
+
+
+
+    &__container {
+        width: initial;
+        /* height: 960px; */
+
+        @include breakpoint-down(medium) {
+            
+        }
+
         @include breakpoint-down(small) {
-            width: 248px;
-            height: 248px;
+           
         }
 
         .logo {
             position: absolute;
-            top: 167px;
+            top: -167px;
             bottom: 167px;
             left: 37px;
             width: 626px;
@@ -34,21 +41,19 @@
             box-shadow: inset -3px 3px 4px rgba(255, 255, 255, 0.2);
             filter: drop-shadow(8px -8px 10px rgba(255, 255, 255, 0.07)) drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25)) drop-shadow(-30px 30px 30px rgba(0, 0, 0, 0.2)) drop-shadow(-45px 45px 70px rgba(83, 12, 12, 0.2));
 
-            @include breakpoint-up(medium);
             @include breakpoint-down(medium) {
-                width: 304px;
-                height: 304px;
-                top: 96px;
+                top: -96px;
 
                 >svg {
                     width: 304px;
                     height: 304px;
                 }
             }
+
             @include breakpoint-down(small) {
                 width: 218px;
                 height: 247px;
-          
+
 
                 >svg {
                     width: 218px;
@@ -67,6 +72,7 @@
         @include breakpoint-down(medium) {
             margin-top: 104px;
         }
+
         @include breakpoint-down(small) {
             margin-top: 60px;
         }
@@ -78,6 +84,7 @@
             @include breakpoint-down(medium) {
                 margin-top: 24px;
             }
+
             @include breakpoint-down(small) {
                 margin-top: 16px;
             }
@@ -86,17 +93,16 @@
     }
 
     &__text {
-        position: absolute;
-        width: 800px;
+        /* position: absolute;
+  width: 800px; */
         height: 404px;
-        margin-left: 56px;
         @include breakpoint-up(medium);
 
         @include breakpoint-down(medium) {
-            width: 432px;
-            height: 280px;
+           
             margin-left: 32px;
         }
+
         @include breakpoint-down(small) {
             width: 248px;
             height: 248px;
@@ -108,6 +114,10 @@
             margin: 0;
             /* or 125% */
             letter-spacing: 0.05em;
+            
+            @include breakpoint-down(medium) {
+                font-size:$font-med;
+            }
             @include breakpoint-down(small) {
                 font-size: $font-xs;
                 line-height: 32px;
@@ -115,7 +125,6 @@
         }
 
         p {
-            width: 600px;
             height: 108px;
             margin: 0;
             margin-top: 32px;
@@ -123,12 +132,11 @@
 
             @include breakpoint-down(medium) {
                 margin-top: 16px;
-                width: 360px;
                 height: 96px;
             }
+
             @include breakpoint-down(small) {
                 margin-top: 10px;
-                width: 248px;
                 height: 80px;
             }
 
@@ -144,11 +152,13 @@
             color: black;
             margin-left: 24px;
             @include breakpoint-up(medium);
+
             @include breakpoint-down(medium) {
                 width: 191px;
                 height: 48px;
                 margin-left: 16px;
             }
+
             @include breakpoint-down(small) {
                 width: 140px;
                 height: 36px;
@@ -161,9 +171,8 @@
     }
 
     &__picture img {
-        margin-top: 20px;
-        margin-right: 56px;
-        @include breakpoint-up(medium);
+        width: 100%;
+        height: inherit;
 
         @include breakpoint-down(medium) {
             width: 324px;
